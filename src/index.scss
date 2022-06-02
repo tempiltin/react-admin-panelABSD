@@ -1,10 +1,9 @@
 
-main{
-    width: 100%;
-    height: auto;
-}
-.scrolling{
-    
+::-webkit-scrollbar{display: none;}
+.scrolling44{
+    height: 100vh;
+    overflow-y: scroll;
+ 
 }
 .Color{
     color: white;

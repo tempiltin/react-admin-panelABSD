@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {FaUserAlt} from 'react-icons/fa'
 import {IoMdNotifications} from 'react-icons/io'
 import {AiOutlineBars} from 'react-icons/ai'
-const NavBar = ({NavClick}) => {
+const NavBar = ({NavClick,tablename}) => {
   return (
     <>
     <nav className='navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl'>
@@ -14,9 +14,9 @@ const NavBar = ({NavClick}) => {
                         <Link to="/" className="opacity-5 text-dark">Pages</Link>
                         
                     </li>
-                    <li className='breadcrumb-item text-sm text-dark active'> Dashboard</li>
+                    <li className='breadcrumb-item text-sm text-dark active'> {tablename}</li>
                 </ol>
-                    <h6 className='font-weight-bolder mb-0'>Dashboard</h6>
+                    <h6 className='font-weight-bolder mb-0'>{tablename}</h6>
             </nav>
             <div id='navbar' className='collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4'>
                 <div className='ms-md-auto pe-md-3 d-flex align-items-center'>

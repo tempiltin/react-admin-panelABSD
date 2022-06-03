@@ -35,16 +35,16 @@ const Sidebar = () => {
                                 <div className='text-white text-center me-2 d-flex align-items-center justify-content-center'>
                                   <BiCategoryAlt className='aside-icons'/>
                                 </div>
-                                <span className='nav-link-text ms-1'>Category</span>
+                                <span className='nav-link-text ms-1'>Categoryes</span>
                             </Link>
                         </li>
   
                         <li className="nav-item">
-                            <Link to="/group" className='nav-link text-white '>
+                            <Link to="/team" className='nav-link text-white '>
                                 <div className='text-white text-center me-2 d-flex align-items-center justify-content-center'>
                                   <FiUsers className='aside-icons'/>
                                 </div>
-                                <span className='nav-link-text ms-1'>Group</span>
+                                <span className='nav-link-text ms-1'>Team</span>
                             </Link>
                         </li>
   

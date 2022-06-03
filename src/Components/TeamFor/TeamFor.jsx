@@ -1,18 +1,19 @@
 import React from 'react'
-import NavBar from '../Components/NavBar/NavBar'
-import TableForTr from '../Components/TableFor/TableForTr'
+import Footer from '../Footer/Footer'
+import NavBar from '../NavBar/NavBar'
+import TeamTD from './TeamTD'
 
-const Tables = ({ NavClick }) => {
+const TeamFor = ({ NavClick }) => {
     return (
         <main className='main-content position-relative  h-100 border-radius-lg ps ps--active-y '>
-            <NavBar tablename="Tables" NavClick={NavClick} />
+            <NavBar tablename="Team" NavClick={NavClick} />
             <div className='container-fluid py-4'>
                 <div className="row">
                     <div className="col-12">
                         <div className="card my-4">
                             <div className='card-header p-0 position-relative mt-n4 mx-3 z-index-2'>
                                 <div className='bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3'>
-                                    <h6 className='text-white text-capitalize ps-3'>Authors table</h6>
+                                    <h6 className='text-white text-capitalize ps-3'>Team Group</h6>
 
                                 </div>
                             </div>
@@ -22,14 +23,14 @@ const Tables = ({ NavClick }) => {
                                         <thead>
                                             <tr>
                                                 <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                                                <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Direction</th>
-                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Payment</th>
-                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
+                                                <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">position</th>
+                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tell</th>
+                                                <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
                                                 <th className="text-secondary opacity-7"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                           <TableForTr />
+                                          <TeamTD />
                                         </tbody>
                                     </table>
                                 </div>
@@ -37,9 +38,10 @@ const Tables = ({ NavClick }) => {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </main>
     )
 }
 
-export default Tables
+export default TeamFor

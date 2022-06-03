@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {FaUserAlt} from 'react-icons/fa'
 import {IoMdNotifications} from 'react-icons/io'
 import {AiOutlineBars} from 'react-icons/ai'
-const NavBar = () => {
+const NavBar = ({NavClick}) => {
   return (
     <>
     <nav className='navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl'>
@@ -35,7 +35,7 @@ const NavBar = () => {
                     <li className='nav-item d-xl-none ps-3 d-flex align-items-center'>
                         <a href='#!' className='nav-link text-body p-0'>
                             <div className='sidenav-toggler-inner'></div>
-                              <AiOutlineBars className='NavBars nav-icon'/>
+                              <AiOutlineBars onClick={()=> NavClick()} className='NavBars nav-icon'/>
                         </a>
                     </li>
 

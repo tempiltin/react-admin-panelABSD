@@ -32,7 +32,7 @@ const App = () => {
   }
   return (
     <>
-    {/* <Sidebar onCloseHandler={onCloseHandler} /> */}
+    <Sidebar onCloseHandler={onCloseHandler} />
       <Routes>
         <Route path='/' element={<Home NavClick={NavClick} />} />
         <Route path='/sign-in' element={<SignIn />} />

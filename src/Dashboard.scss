@@ -22392,20 +22392,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   margin-left: 0;
 }
 
-@media (max-width: 1199.98px) {
-  .g-sidenav-show.rtl .sidenav {
-    transform: translateX(17.125rem);
-  }
-  .g-sidenav-show:not(.rtl) .sidenav {
-    transform: translateX(-17.125rem);
-  }
-  .g-sidenav-show .sidenav.fixed-start + .main-content {
-    margin-left: 0 !important;
-  }
-  .g-sidenav-show.g-sidenav-pinned .sidenav {
-    transform: translateX(0);
-  }
-}
+
 .navbar-vertical.bg-white {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }

@@ -62,17 +62,17 @@ const TeamTD = () => {
                     return (
                         <tr key={id}>
                             <td>
-                                <div class="d-flex px-2 py-1">
+                                <div className="d-flex px-2 py-1">
                                     <div>
                                         <img src={img} className="avatar avatar-sm me-3 border-radius-lg" alt="" />
                                     </div>
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <h6 class="mb-0 text-sm">
+                                    <div className="d-flex flex-column justify-content-center">
+                                        <h6 className="mb-0 text-sm">
                                             <Link to="/team/team-grooup-user-add">
                                                 {name}
                                             </Link>
                                         </h6>
-                                        <p class="text-xs text-secondary mb-0">
+                                        <p className="text-xs text-secondary mb-0">
                                             <a href={`mailto:`+ email}>{email}</a>
                                         </p>
                                     </div>

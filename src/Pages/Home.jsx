@@ -3,10 +3,10 @@ import ClientFor from '../Components/ClientFor/ClientFor'
 import Footer from '../Components/Footer/Footer'
 import NavBar from '../Components/NavBar/NavBar'
 
-const Home = ({NavClick}) => {
+const Home = ({NavClick,onCloseHandler}) => {
     return (
         <main className='main-content position-relative  h-100 border-radius-lg ps ps--active-y '>
-            <NavBar tablename="Dashboard" NavClick={NavClick}/>
+            <NavBar tablename="Dashboard" NavClick={NavClick} />
             <div className="container-fluid  py-4 ">
                 <div className="row">
                     <ClientFor />

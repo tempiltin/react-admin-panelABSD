@@ -12,7 +12,7 @@ const TeamGroup = ({NavClick}) => {
                 <form action="" className='row'>
                     <div className="col-12">
                         <label htmlFor="category">Team Group user Add</label>
-                        <input type="text" name='user' value="Team Group user Add" className='form-control' />
+                        <input type="text" name='user' defaultValue="Team Group user Add" className='form-control' />
                     </div>
                    <div className="col-12 mt-4">
                        <button type='button' className='category-btn'>Add</button>

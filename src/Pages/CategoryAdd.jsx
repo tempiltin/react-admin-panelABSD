@@ -12,7 +12,7 @@ const CategoryAdd = ({ NavClick }) => {
                         <form action="" className='row'>
                             <div className="col-12">
                                 <label htmlFor="category">Category Add</label>
-                                <input type="text" name='category' value="Category-Add" className='form-control' />
+                                <input type="text" name='category' defaultValue="Category-Add" className='form-control' />
                             </div>
                            <div className="col-12 mt-4">
                                <button type='button' className='category-btn'>Add</button>

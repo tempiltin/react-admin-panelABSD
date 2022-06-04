@@ -25,21 +25,21 @@ const NavBar = ({NavClick,tablename}) => {
                     </div>
                 </div>
                 <ul className='navbar-nav  justify-content-end'>
-                    <li className='nav-item d-flex align-items-center'>
-                        <Link to="/my-profile" className='nav-link text-body font-weight-bold px-0 '>
+                    <li className='nav-item d-flex align-items-center bb'>
+                        <Link to="/" className='nav-link text-body font-weight-bold px-0 '>
                               <FaUserAlt className='nav-icon'/>
-                              <span className='d-sm-inline d-none'>Your Name</span>
+                              <span className='d-sm-inline d-none dll'>Your Name</span>
                         </Link>
                     </li>
 
-                    <li className='nav-item d-xl-none ps-3 d-flex align-items-center'>
-                        <a href='#!' className='nav-link text-body p-0'>
+                    <li className='nav-item d-xl-none ps-3 d-flex align-items-center bb'>
+                        <button className='nav-link text-body p-0 border-none'  id='bars-icon0navbar'>
                             <div className='sidenav-toggler-inner'></div>
                               <AiOutlineBars onClick={()=> NavClick()} className='NavBars nav-icon'/>
-                        </a>
+                        </button>
                     </li>
 
-                    <li className='nav-item dropdown pe-2 d-flex align-items-center'>
+                    <li className='nav-item dropdown pe-2 d-flex align-items-center bb'>
                         <a href="#!" className='nav-link text-body p-0'>
                             <IoMdNotifications aria-hidden="true" className='nav-icon'/>
                         </a>

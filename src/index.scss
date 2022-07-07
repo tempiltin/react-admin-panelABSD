@@ -5,6 +5,39 @@
     overflow-y: scroll;
  
 }
+body{
+    position: relative;
+}
+.e_R_R_o_r{
+    background: #fff !important;
+    z-index: 100000000000000000000000000;
+    position: fixed !important;
+    width: 100%;
+    height: 100vh;
+   .card{
+      margin-top: 20%;
+    h2{
+        
+        font-size: 100px;
+        text-align: center;
+        background-color: #DF5032;
+        span:nth-child(odd){
+            color: #fff;
+        }
+    }
+    h1{
+        font-size: 150px;
+        text-align: center;
+    }
+   }
+   a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    background: #1A73E8 ;
+    color: #fff;
+   }
+}
 .Color{
     color: white;
     font-size: 32px;

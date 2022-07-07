@@ -1,5 +1,5 @@
 import React  from 'react'
-import { Route, Routes } from 'react-router-dom'
+import {BrowserRouter  , Routes, Route , Switch  } from 'react-router-dom'
 import Sidebar from './Components/SideBar/Sidebar'
 import SignIn from './Pages/Auth/SignIn'
 import SignUp from './Pages/Auth/SignUp'
@@ -7,7 +7,7 @@ import Category from './Pages/Category'
 import CategoryAdd from './Pages/CategoryAdd'
 import Home from './Pages/Home'
 import Tables from './Pages/Tables'
-
+import Error404 from './Pages/Error404'
 import Team from './Pages/Team'
 import TeamGroup from './Pages/TeamGroup'
 
@@ -34,15 +34,17 @@ const App = () => {
     <>
     <Sidebar onCloseHandler={onCloseHandler} />
       <Routes>
-        <Route path='/' element={<Home NavClick={NavClick} />} />
-        <Route path='/sign-in' element={<SignIn />} />
-        <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/tables' element={<Tables NavClick={NavClick} />} />
-        <Route path='/category' element={<Category NavClick={NavClick} />} />
+         
+         <Route path='/' exact  element={<Home NavClick={NavClick} />} />
+        <Route path='/sign-in' exact element={<SignIn />} />
+        <Route path='/sign-up' exact element={<SignUp />} />
+        <Route path='/tables' exact element={<Tables NavClick={NavClick} />} />
+        <Route path='/category' exact element={<Category NavClick={NavClick} />} />
         <Route path='/category/category-add' element={<CategoryAdd NavClick={NavClick} />} />
-        <Route path='/team' element={<Team NavClick={NavClick} />} />
+        <Route path='/team' exact element={<Team NavClick={NavClick} />} />
         <Route path='/team/team-grooup-user-add'  element={<TeamGroup NavClick={NavClick} />} />
-
+        <Route path='*' element={<Error404/>} />
+       
       </Routes>
 
     </>
